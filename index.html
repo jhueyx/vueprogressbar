@@ -33,7 +33,11 @@
 							{{ progress + '%' }}
  				</div>	
 			</div>
-			<button type="button" v-on:click="start">Start</button>
+			<button 
+				type="button" 
+				v-on:click="start" 
+				v-if="progress < 100"
+			>Start</button>
 		</div>
 
 <!--Scripts  -->
